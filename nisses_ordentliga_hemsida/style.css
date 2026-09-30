@@ -1,0 +1,77 @@
+/* Hela sidan: mörk bakgrund, vit text, ingen marginal */
+body {
+  background-color: #0d0f10;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Alla länkar: vita och utan understrykning */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Menyraden: mörkgrå med orange linje under, länkarna ligger på en rad */
+nav {
+  display: flex;
+  background-color: #1a1d1f;
+  border-bottom: 3px solid orange;
+}
+
+/* Varje länk i menyn: lite luft runt texten */
+nav a {
+  display: block;
+  padding: 15px 20px;
+}
+
+/* När man håller musen över en länk: orange bakgrund */
+nav a:hover {
+  background-color: orange;
+  color: black;
+}
+
+/* Dropdown gör att undermenyn kan placeras under knappen */
+.dropdown {
+  position: relative;
+}
+
+/* Undermenyn är gömd från början */
+.dropdown ul {
+  display: none;
+  position: absolute;
+  background-color: #1a1d1f;
+  width: 170px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown:hover ul{
+    display: block;
+}
+
+/*Text området*/
+.titleBox{
+    padding: 60px;
+}
+
+.titleBox p{
+    margin-top: 20px; /*ändrar på p texten*/
+    color: #8a9094;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 15px;
+}
+
+/* Ordet i span blir orange */
+h1 span {
+  color: orange;
+}
+ 

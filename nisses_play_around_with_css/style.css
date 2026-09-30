@@ -1,34 +1,40 @@
-.container{
+body{
+    background-color: beige;
+}
+
+h1{
+text-align: center;
+color: steelblue;
+}
+
+
+
+/*FRONT AND BACK PÅ KORTET*/
+.container1{
     width: 200px;
     height: 200px;
     perspective: 600px;
 }
 
-.card{
+.card .face{
+       
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
     transition: transform 1s;
     transform-style: preserve-3d;
+    backface-visibility: hidden;
+    text-align: center; 
 }
 
-.face{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-  text-align: center;
-}
+/*FRAM och back på kortet så det är bilden*/
+.card .front-pig{ background-image: url(pig_front200px.png);}
+.card .back-pig{ background-image: url(pig_behind200px.png); transform: rotateY(180deg);}
 
-.front{
-    background-image: url(pig_front200px.png);
-}
 
-.back{
-    background-image: url(pig_behind200px.png);
-    transform: rotateY(180deg);
-}
 
-.container:hover .card{
+
+/*horar vi över kortets kontainer så roteras kortet 180 grader*/
+.container1:hover .card{
     transform: rotateY(180deg);
 }

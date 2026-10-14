@@ -1,0 +1,18 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.sida-header{
+    background: #011827;
+    color: #FFFFFF;
+    padding: 1rem 1.5rem 0;
+} 
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.logo{
+    width: clamp(70px, 12vw, 150px);
+    height: auto;
+}
